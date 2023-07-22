@@ -37,9 +37,11 @@ class MainActivity : AppCompatActivity() {
                 result.isVisible = false
                 resultLabel.text = "Input is not numeric"
                 resultLabel.isVisible = true
+                resultLabel.setBackgroundColor(Color.parseColor("#FF0000"))
             }
             else {
                 resultLabel.text = "Result:"
+                resultLabel.setBackgroundColor(Color.parseColor(("#FFFFFF")))
                 var x: Int = quantity.text.toString().toInt()
                 val df = DecimalFormat("#.##")
                 df.roundingMode = RoundingMode.CEILING
